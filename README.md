@@ -1,16 +1,100 @@
-## Hi there 👋
+# OT/SCADA Cybersecurity Demonstrator
 
-<!--
-**akshittu/akshittu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Overview
 
-Here are some ideas to get you started:
+This project demonstrates Operational Technology (OT), SCADA, Industrial Control Systems (ICS), and Cybersecurity concepts using Ignition Perspective.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+The objective is to transform the Purdue Enterprise Reference Architecture from a static architecture model into a real-time asset visibility and situational awareness framework.
+
+---
+
+## Project Objectives
+
+- Demonstrate Purdue Architecture concepts
+- Improve OT asset visibility
+- Simulate cybersecurity events
+- Demonstrate operational impact of cyber incidents
+- Visualize trust boundaries and network segmentation
+- Represent industrial protocols including:
+  - IEC 61850 MMS
+  - IEC 61850 GOOSE
+  - OPC UA
+  - Modbus TCP
+  - DNP3
+
+---
+
+## Architecture
+
+### Level 4 – Enterprise
+
+- Enterprise Firewall
+
+### Level 3.5 – DMZ
+
+- OT Firewall
+- Jump Server
+
+### Level 3 – Operations
+
+- Historian
+- Engineering Workstation
+
+### Level 2 – SCADA
+
+- Ignition SCADA/HMI
+
+### Level 1 – Control
+
+- PLC/RTU
+- Protection IED
+- Bay Control IED
+
+### Level 0 – Process
+
+- Transformers
+- Breakers
+- Frequency Monitoring
+- Voltage Monitoring
+
+---
+
+## Simulated Cyber Scenarios
+
+1. Substation LAN Failure
+2. Historian Failure
+3. OT Firewall Failure
+4. Enterprise Firewall Failure
+5. Protection IED Failure
+
+---
+
+## Impact Demonstration
+
+Cyber Event
+↓
+Asset Impact
+↓
+Operational Impact
+↓
+Alarm Generation
+↓
+Operator Awareness
+
+---
+
+## Current Status
+
+✅ Overview Dashboard
+
+✅ Alarm Management
+
+✅ Trend Monitoring
+
+✅ Cyber Dashboard
+
+✅ Purdue Architecture View
+
+✅ Scenario-based Simulation## Hi there 👋
+
+
