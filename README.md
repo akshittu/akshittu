@@ -25,7 +25,8 @@ The demonstrator provides a visual representation of selected enterprise IT and 
 - Establish a foundation for further practical ICS/OT cybersecurity development.
 
 ## Architecture Overview
-![Purdue-based injection substation OT architecture](Purdue%20Injection%20Substation%20Architecture.png)
+
+![Purdue-based injection substation OT architecture](./Purdue%20Injection%20Substation%20Architecture.png)
 
 The architecture represents the following Purdue levels and example components.
 
