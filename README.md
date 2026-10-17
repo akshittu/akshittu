@@ -27,6 +27,7 @@ The demonstrator provides a visual representation of selected enterprise IT and 
 ## Architecture Overview
 
 ![Purdue-based injection substation OT architecture](./Purdue%20Injection%20Substation%20Architecture.png)
+
 **Figure 1 — Purdue-Based Injection Substation Architecture: Substation LAN Failure Scenario**
 
 This screenshot shows the Ignition Perspective monitoring interface with the Substation LAN Failure scenario selected. Backend tag values drive the displayed status indicators, illustrating how a simulated infrastructure failure is represented in the OT architecture. The screenshot documents the selected scenario state; it does not, by itself, demonstrate a real network outage or independently validated cybersecurity controls.
