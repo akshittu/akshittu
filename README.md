@@ -97,4 +97,33 @@ Operator Awareness
 
 ✅ Scenario-based Simulation## Hi there 👋
 
+# OT/SCADA Cybersecurity Demonstrator
+
+## Project Objective
+
+...
+
+## Purdue-Based Asset Visibility Framework
+
+[Purdue Screenshot]
+
+## Cyber Monitoring Dashboard
+
+[Cyber Screenshot]
+
+## Alarm Management
+
+[Alarm Screenshot]
+
+## Substation Overview (SLD)
+
+[Overview Screenshot]
+
+## Historian and Trending
+
+[Trend Screenshot]
+
+## Development Environment
+
+[Ignition Designer Screenshot]
 
