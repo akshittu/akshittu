@@ -1,100 +1,140 @@
 # OT/SCADA Cybersecurity Demonstrator
 
-## Overview
+### Purdue-Based Injection Substation Architecture and Scenario-Driven Monitoring
 
-This project demonstrates Operational Technology (OT), SCADA, Industrial Control Systems (ICS), and Cybersecurity concepts using Ignition Perspective.
+**Electrical Power Engineering | Project Management | ICS/OT Cybersecurity**
 
-The objective is to transform the Purdue Enterprise Reference Architecture from a static architecture model into a real-time asset visibility and situational awareness framework.
+## Project Overview
 
----
+This project is a simulated OT/SCADA monitoring demonstrator developed using Ignition Designer and Perspective. It combines a Purdue Model-based injection substation architecture with backend tag-driven visualisation, selectable infrastructure-failure scenarios, alarm behaviour, and trend charts.
+
+The project applies my power engineering background to the exploration of industrial control system monitoring, infrastructure availability, and operational awareness.
+
+The demonstrator provides a visual representation of selected enterprise IT and OT components, industrial control devices, and electrical process assets. Backend tag values drive the corresponding status indicators in the Perspective interface.
+
+**Project status:** Working lab demonstrator under development. Six selectable scenarios have been exercised, and alarm behaviour and trend charts have been tested. Further technical documentation, validation, and cybersecurity analysis remain ongoing.
 
 ## Project Objectives
 
-- Demonstrate Purdue Architecture concepts
-- Improve OT asset visibility
-- Simulate cybersecurity events
-- Demonstrate operational impact of cyber incidents
-- Visualize trust boundaries and network segmentation
-- Represent industrial protocols including:
-  - IEC 61850 MMS
-  - IEC 61850 GOOSE
-  - OPC UA
-  - Modbus TCP
-  - DNP3
+- Apply a Purdue Model-based architecture to an electrical injection substation use case.
+- Represent enterprise IT, the OT DMZ, site operations, supervisory control, basic control, and the electrical process.
+- Use Ignition tags and configured bindings to drive visual asset-status indicators.
+- Demonstrate six selectable operating and infrastructure-failure scenarios.
+- Test alarm behaviour and trend-chart functionality in the lab.
+- Explore how simulated infrastructure states can improve operator visibility and support investigation.
+- Establish a foundation for further practical ICS/OT cybersecurity development.
 
----
+## Architecture Overview
 
-## Architecture
+The architecture represents the following Purdue levels and example components.
 
-### Level 4 – Enterprise
+| Purdue level                  | Representative components                                                 |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| Level 4 — Enterprise IT       | Active Directory server, SIEM, enterprise network and enterprise firewall |
+| Level 3.5 — OT DMZ            | Jump server, remote access gateway, data exchange server and OT firewall  |
+| Level 3 — Site Operations     | Engineering workstation and OT historian                                  |
+| Level 2 — Supervisory Control | Ignition SCADA/HMI and operator workstation                               |
+| Level 1 — Basic Control       | PLC/RTU, bay control IED and protection IED                               |
+| Level 0 — Process             | 33 kV and 11 kV breakers, transformers, frequency and bus voltage         |
 
-- Enterprise Firewall
+The architecture illustrates the separation of enterprise, operations, control, and process functions. It also identifies representative trust boundaries and communication paths for further OT security analysis.
 
-### Level 3.5 – DMZ
+The diagram is a conceptual representation of the lab architecture. It does not imply that every illustrated component is a separate deployed system or that the depicted network segmentation has been independently validated.
 
-- OT Firewall
-- Jump Server
+## Technology Stack
 
-### Level 3 – Operations
+- **SCADA/HMI:** Ignition Designer and Perspective.
+- **Backend state:** Ignition tags.
+- **Visualisation:** Perspective components and configured tag bindings.
+- **Monitoring:** Asset-status indicators, alarm behaviour and trend charts.
+- **Test environment:** Simulated injection substation and infrastructure states.
 
-- Historian
-- Engineering Workstation
+## Scenario-Based Monitoring
 
-### Level 2 – SCADA
+The demonstrator implements six selectable scenarios identified by numeric values from 0 to 5. Each scenario has been selected and observed changing the backend-driven display.
 
-- Ignition SCADA/HMI
+| ID | Scenario                    | Demonstration objective                                                              |
+| -: | --------------------------- | ------------------------------------------------------------------------------------ |
+|  0 | Normal Operation            | Display the baseline state of the simulated environment.                             |
+|  1 | Substation LAN Failure      | Represent a substation network failure through the relevant visual status indicator. |
+|  2 | Historian Failure           | Represent an OT historian failure in the selected scenario.                          |
+|  3 | OT Firewall Failure         | Represent an OT firewall failure.                                                    |
+|  4 | Enterprise Firewall Failure | Represent an enterprise firewall failure.                                            |
+|  5 | IED Failure                 | Represents a failure affecting an intelligent electronic device.                      |
 
-### Level 1 – Control
+### Backend-Driven Visualisation
 
-- PLC/RTU
-- Protection IED
-- Bay Control IED
+The scenario selection changes backend tag values, which are consumed by configured Perspective bindings to update the visual display.
 
-### Level 0 – Process
+For example, selecting Scenario 1 — Substation LAN Failure displays a red failure indicator for the relevant network element.
 
-- Transformers
-- Breakers
-- Frequency Monitoring
-- Voltage Monitoring
+This demonstrates scenario-driven state visualisation in the lab. The precise effect of each scenario on other assets, communication paths, and alarms should be assessed individually rather than assumed from the selected scenario alone.
 
----
+## Alarm and Trend Monitoring
 
-## Simulated Cyber Scenarios
+Alarm behaviour and trend-chart functionality have been tested in the lab environment.
 
-1. Substation LAN Failure
-2. Historian Failure
-3. OT Firewall Failure
-4. Enterprise Firewall Failure
-5. Protection IED Failure
+These features support exploration of how changes in simulated operating conditions can be presented to an operator through alarms and time-series visualisation.
 
----
+Further development will document the configured alarm conditions, tag dependencies, trend data sources, test procedures, and observed results in greater detail.
 
-## Impact Demonstration
+## Industrial Communication Technologies
 
-Cyber Event
-↓
-Asset Impact
-↓
-Operational Impact
-↓
-Alarm Generation
-↓
-Operator Awareness
+The architecture identifies the following industrial communication technologies as relevant design concepts:
 
----
+- IEC 61850 MMS and GOOSE.
+- OPC UA.
+- Modbus/TCP.
+- DNP3.
 
-## Current Status
+These technologies are represented as architecture labels or design concepts. Their inclusion does not imply that the demonstrator has generated, captured, analysed, or integrated protocol traffic.
 
-✅ Overview Dashboard
+We will document practical protocol experiments and associated evidence separately as we complete them.
 
-✅ Alarm Management
+## ICS/OT Cybersecurity Learning Outcomes
 
-✅ Trend Monitoring
+This project provides a practical foundation for exploring:
 
-✅ Cyber Dashboard
+- Purdue Model-based OT architecture.
+- Industrial asset visibility and status representation.
+- Backend tag-driven monitoring.
+- Scenario-based fault visualisation.
+- Alarm behaviour and trend monitoring.
+- Infrastructure availability and operational dependencies.
+- OT network segmentation and trust boundaries as architectural concepts.
+- The distinction between monitoring simulated states and detecting real cyber threats.
 
-✅ Purdue Architecture View
+The current demonstrator focuses on visual monitoring of simulated infrastructure conditions. It is not, by itself, a network intrusion detection system and does not establish the effectiveness of cybersecurity controls.
 
-✅ Scenario-based Simulation## Hi there 👋
+## Current Status and Future Development
 
+### Implemented and Tested
 
+- Purdue-based injection substation architecture layout.
+- Ignition Perspective monitoring interface.
+- Backend tag-driven visual status indicators.
+- Six selectable scenarios, with observed changes to the backend-driven display.
+- Alarm behaviour testing.
+- Trend-chart testing.
+
+### Planned Development
+
+- Document individual scenario test procedures and observed results.
+- Verify and document the effect of each scenario on relevant assets and alarms.
+- Capture screenshots of the working dashboard and scenario states.
+- Develop practical IEC 61850 GOOSE traffic analysis.
+- Explore industrial protocol analysis and OT network visibility in an isolated lab.
+- Document defensive recommendations for segmentation, controlled access, monitoring, and incident response.
+- Expand the demonstrator as further features are implemented and validated.
+
+## Professional Background
+
+I am an electrical power engineering and project management professional with more than 15 years of experience in the power sector. I am developing practical ICS/OT cybersecurity capabilities, with a particular interest in industrial control systems, SCADA, industrial communications, and the protection of critical electrical infrastructure.
+
+My goal is to combine power-sector operational knowledge with cybersecurity skills to contribute to the security, resilience, and safe operation of industrial environments.
+
+## Disclaimer
+
+This project is intended for education, technical demonstration, and professional development. All scenarios are simulated in a lab environment and do not represent faults or cyber incidents on a live electrical network.
+
+The presence of a component, architecture label, alarm, or status indicator does not establish that the associated production system or cybersecurity control has been deployed or independently validated.
