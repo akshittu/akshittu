@@ -30,7 +30,7 @@ The demonstrator provides a visual representation of selected enterprise IT and 
 
 **Figure 1 — Purdue-Based Injection Substation Architecture: Substation LAN Failure Scenario**
 
-This screenshot shows the Ignition Perspective monitoring interface with the Substation LAN Failure scenario selected. Backend tag values drive the displayed status indicators, illustrating how a simulated infrastructure failure is represented in the OT architecture. The screenshot documents the selected scenario state; it does not, by itself, demonstrate a real network outage or independently validated cybersecurity controls.
+This screenshot shows the Ignition Perspective monitoring interface with the Substation LAN Failure scenario selected. Backend tag values drive the displayed status indicators, showing how the OT architecture represents a simulated infrastructure failure. The screenshot documents the selected scenario state; it does not, by itself, demonstrate a real network outage or independently validated cybersecurity controls.
 
 The architecture represents the following Purdue levels and example components.
 
@@ -45,7 +45,7 @@ The architecture represents the following Purdue levels and example components.
 
 The architecture illustrates the separation of enterprise, operations, control, and process functions. It also identifies representative trust boundaries and communication paths for further OT security analysis.
 
-The diagram is a conceptual representation of the lab architecture. It does not imply that every illustrated component is a separate deployed system or that the depicted network segmentation has been independently validated.
+The diagram conceptually represents the lab architecture. It does not imply that every illustrated component is a separate deployed system or that the depicted network segmentation has been independently validated.
 
 ## Demonstrator Screenshots
 
@@ -65,13 +65,13 @@ The alarm dashboard presents configured alarm sources, their displayed status, a
 
 ### 3. OT Cybersecurity Dashboard
 
-![OT Cybersecurity Dashboard](images/cyber-dashboard.png)
+![OT Cybersecurity Dashboard](Images/Cyber-Dashboard.png)
 
 The cyber dashboard provides a visual representation of selected asset status and health indicators, including the PLC, Gateway, historian, and firewall.
 
 ### 4. Substation Trend Dashboard
 
-![Substation Trend Dashboard](images/trend-dashboard.png)
+![Substation Trend Dashboard](Images/Trend-Dashboard.png)
 
 The trend dashboard displays selected electrical measurements, including 33 kV voltage, frequency, power factor, and current over a selected time range. Trend-chart functionality has been tested in the lab.
 
