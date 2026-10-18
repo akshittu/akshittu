@@ -26,6 +26,6 @@ Attach or link the corresponding Scenario 2 screenshot when it has been uploaded
 
 ## Screenshot Evidence
 
-![Scenario 2 — Historian Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-2-Historian-Failure.png)
+![Scenario 2 — Historian-Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-2-Historian-Failure.png)
 
 *The dashboard shows the OT Historian OFFLINE while the Substation LAN remains healthy, with the displayed impact identified as Loss of Historical Data Recording.*
