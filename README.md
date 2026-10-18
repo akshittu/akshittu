@@ -163,6 +163,12 @@ The current demonstrator focuses on visual monitoring of simulated infrastructur
 - Document defensive recommendations for segmentation, controlled access, monitoring, and incident response.
 - Expand the demonstrator as further features are implemented and validated.
 
+### Development Environment — Ignition Designer
+
+![Ignition Designer development environment](Ignition-Designer-Workspace.png)
+
+*Figure 6 — Ignition Designer workspace showing the development environment for the Purdue-based injection substation OT/SCADA monitoring demonstrator. The workspace provides context for the Perspective dashboard, project structure, component configuration, and tag-driven development.*
+
 ## Professional Background
 
 I am an electrical power engineering and project management professional with more than 15 years of experience in the power sector. I am developing practical ICS/OT cybersecurity capabilities, with a particular interest in industrial control systems, SCADA, industrial communications, and the protection of critical electrical infrastructure.
