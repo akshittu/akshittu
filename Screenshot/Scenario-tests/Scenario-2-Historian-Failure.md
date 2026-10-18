@@ -23,3 +23,9 @@ The dashboard reflects the selected Historian Failure scenario by showing the OT
 This record documents the visible behaviour of the Ignition Perspective demonstrator. It does not establish that an actual historian service failure occurred or that live industrial systems were monitored.
 
 Attach or link the corresponding Scenario 2 screenshot when it has been uploaded to the repository.
+
+## Screenshot Evidence
+
+![Scenario 2 — Historian Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-2-Historian-Failure.png)
+
+*The dashboard shows the OT Historian OFFLINE while the Substation LAN remains healthy, with the displayed impact identified as Loss of Historical Data Recording.*
