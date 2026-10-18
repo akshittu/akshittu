@@ -26,3 +26,9 @@ The Bay Control IED remains online after the scenario logic was corrected. This 
 This record documents the visible behaviour of the Ignition Perspective demonstrator. It does not establish that an actual enterprise firewall failure occurred or that real network traffic or cybersecurity controls were tested.
 
 Attach or link the corresponding Scenario 4 screenshot when it has been uploaded to the repository.
+
+## Screenshot Evidence
+
+![Scenario 4 — Enterprise Firewall Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-4-Enterprise-Firewall-Failure.png)
+
+*The dashboard shows the IT Firewall OFFLINE while the OT Firewall and Bay Control IED remain ONLINE, with the displayed impact identified as IT/OT Boundary Degraded.*
