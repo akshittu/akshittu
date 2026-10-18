@@ -19,6 +19,6 @@ This record documents the displayed behaviour in the Ignition Perspective demons
 
 ## Screenshot Evidence
 
-![Scenario 0 — Normal Operation](./Scenario-0-Normal-Operation.png)
+![Scenario 0 Normal Operation](Scenario-0-Normal-Operation.png)
 
-*The dashboard shows the normal operating state, with displayed devices online and the Substation LAN healthy.*
+The dashboard shows the normal operating state, with displayed devices online and the Substation LAN healthy.
