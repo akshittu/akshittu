@@ -59,7 +59,7 @@ The overview presents a simulated injection substation, including electrical mea
 
 ### 2. Alarm Overview Dashboard
 
-![Alarm Overview Dashboard](images/alarm-dashboard.png)
+![Ignition Perspective Alarm Overview Dashboard](Images/Alarm-Dashboard.png)
 
 The alarm dashboard presents configured alarm sources, their displayed status, and severity. Alarm behaviour has been tested within the lab environment.
 
