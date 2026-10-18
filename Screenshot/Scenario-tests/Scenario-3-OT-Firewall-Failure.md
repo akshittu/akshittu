@@ -31,6 +31,6 @@ Attach or link the corresponding Scenario 3 screenshot when it has been uploaded
 
 ## Screenshot Evidence
 
-![Scenario 3 — OT Firewall Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-3-ot-Firewall-Failure.png)
+![Scenario 3 — OT Firewall Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-2-Historian-Failure.png)
 
 *The dashboard shows the OT Firewall OFFLINE while the Bay Control IED remains ONLINE, with the displayed impact identified as OT Boundary Degraded.*
