@@ -47,6 +47,36 @@ The architecture illustrates the separation of enterprise, operations, control, 
 
 The diagram is a conceptual representation of the lab architecture. It does not imply that every illustrated component is a separate deployed system or that the depicted network segmentation has been independently validated.
 
+## Demonstrator Screenshots
+
+The following screenshots illustrate the current Ignition Perspective implementation and its monitoring capabilities.
+
+### 1. Substation Overview Dashboard
+
+![Substation Overview Dashboard](images/overview-dashboard.png)
+
+The overview presents a simulated injection substation, including electrical measurements, breaker states, transformer information, system status, and selected scenario indicators.
+
+### 2. Alarm Overview Dashboard
+
+![Alarm Overview Dashboard](images/alarm-dashboard.png)
+
+The alarm dashboard presents configured alarm sources, their displayed status, and severity. Alarm behaviour has been tested within the lab environment.
+
+### 3. OT Cybersecurity Dashboard
+
+![OT Cybersecurity Dashboard](images/cyber-dashboard.png)
+
+The cyber dashboard provides a visual representation of selected asset status and health indicators, including the PLC, Gateway, historian, and firewall.
+
+### 4. Substation Trend Dashboard
+
+![Substation Trend Dashboard](images/trend-dashboard.png)
+
+The trend dashboard displays selected electrical measurements, including 33 kV voltage, frequency, power factor, and current over a selected time range. Trend-chart functionality has been tested in the lab.
+
+**Evidence scope:** These screenshots document the current visual implementation. The demonstrator uses backend tag-driven scenario states. Industrial protocol integrations, packet-level attack analysis, and associated detection controls will be documented separately when implemented and tested.
+
 ## Technology Stack
 
 - **SCADA/HMI:** Ignition Designer and Perspective.
