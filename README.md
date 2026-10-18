@@ -104,7 +104,22 @@ The OT/SCADA demonstrator was evaluated using six predefined scenarios covering 
 
 - [Read Scenario Test Results (PDF)](Scenario-Test-Results.pdf)
 - [View Scenario Test Results (Markdown)](./Scenario-Test-Results.md)
-  
+
+  ## Scenario-Based Testing and Evidence
+
+The Ignition Perspective demonstrator includes six selectable scenarios representing normal operation and selected OT infrastructure failures. Each scenario has an individual test record documenting the affected asset, displayed impact, observed status indicators, and relevant limitations.
+
+| Scenario | Test Record |
+|---|---|
+| 0 — Normal Operation | [View test record](Screenshot/Scenario-tests/Scenario-0-Normal-Operation.md) |
+| 1 — Substation LAN Failure | [View test record](Screenshot/Scenario-tests/Scenario-1-Substation-LAN-Failure.md) |
+| 2 — Historian Failure | [View test record](Screenshot/Scenario-tests/Scenario-2-Historian-Failure.md) |
+| 3 — OT Firewall Failure | [View test record](Screenshot/Scenario-tests/Scenario-3-OT-Firewall-Failure.md) |
+| 4 — Enterprise Firewall Failure | [View test record](Screenshot/Scenario-tests/Scenario-4-Enterprise-Firewall-Failure.md) |
+| 5 — IED Failure | [View test record](Screenshot/Scenario-tests/Scenario-5-IED-Failure.md) |
+
+For the consolidated findings and limitations, see the [Scenario Test Results (PDF)](Scenario-Test-Results.pdf) or [Scenario Test Results (Markdown)](Scenario-Test-Results.md).
+
 ### Backend-Driven Visualisation
 
 The scenario selection changes backend tag values, which are consumed by configured Perspective bindings to update the visual display.
