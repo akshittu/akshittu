@@ -26,3 +26,9 @@ This record documents the visible behaviour of the Ignition Perspective demonstr
 ## Future Development
 
 Potential future work includes introducing a clearly labelled simulated GOOSE status and, later, exploring actual IEC 61850 GOOSE traffic capture and analysis in an isolated lab. These capabilities are not currently implemented.
+
+## Screenshot Evidence
+
+![Scenario 5 — IED Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-5-IED-Failure.png)
+
+*The dashboard shows the Protection IED OFFLINE, with the displayed impact identified as Reduced Protection Visibility. The GOOSE status remains a static HEALTHY label and does not represent live communication monitoring.*
