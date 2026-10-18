@@ -53,7 +53,7 @@ The following screenshots illustrate the current Ignition Perspective implementa
 
 ### 1. Substation Overview Dashboard
 
-![Substation Overview Dashboard](images/overview-dashboard.png)
+![Substation Overview Dashboard](Images/Overview-Dashboard.png)
 
 The overview presents a simulated injection substation, including electrical measurements, breaker states, transformer information, system status, and selected scenario indicators.
 
