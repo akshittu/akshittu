@@ -53,25 +53,25 @@ The following screenshots illustrate the current Ignition Perspective implementa
 
 ### 1. Substation Overview Dashboard
 
-![Substation Overview Dashboard](Images/Overview-Dashboard.png)
+![Substation Overview Dashboard](Overview-Dashboard.png)
 
 The overview presents a simulated injection substation, including electrical measurements, breaker states, transformer information, system status, and selected scenario indicators.
 
 ### 2. Alarm Overview Dashboard
 
-![Ignition Perspective Alarm Overview Dashboard](Images/Alarm-Dashboard.png)
+![Alarm Overview Dashboard](Alarm-Dashboard.png)
 
 The alarm dashboard presents configured alarm sources, their displayed status, and severity. Alarm behaviour has been tested within the lab environment.
 
 ### 3. OT Cybersecurity Dashboard
 
-![OT Cybersecurity Dashboard](Images/Cyber-Dashboard.png)
+![OT Cybersecurity Dashboard](Cyber-Dashboard.png)
 
 The cyber dashboard provides a visual representation of selected asset status and health indicators, including the PLC, Gateway, historian, and firewall.
 
 ### 4. Substation Trend Dashboard
 
-![Substation Trend Dashboard](Images/Trend-Dashboard.png)
+![Substation Trend Dashboard](Trend-Dashboard.png)
 
 The trend dashboard displays selected electrical measurements, including 33 kV voltage, frequency, power factor, and current over a selected time range. Trend-chart functionality has been tested in the lab.
 
