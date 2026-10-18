@@ -98,6 +98,13 @@ The demonstrator implements six selectable scenarios identified by numeric value
 |  4 | Enterprise Firewall Failure | Represent an enterprise firewall failure.                                            |
 |  5 | IED Failure                 | Represents a failure affecting an intelligent electronic device.                      |
 
+### Testing and Validation
+
+The OT/SCADA demonstrator was evaluated using six predefined scenarios covering normal operation, substation LAN failure, historian failure, OT firewall failure, enterprise firewall failure, and IED failure.
+
+- [Read the Scenario Test Results (PDF)](Scenario-Test-Results.pdf)
+- [View the Scenario Test Results (Markdown)](Scenario-Test-Results.md)
+  
 ### Backend-Driven Visualisation
 
 The scenario selection changes backend tag values, which are consumed by configured Perspective bindings to update the visual display.
