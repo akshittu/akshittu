@@ -18,6 +18,8 @@ The observed dashboard represents the baseline operating state for comparison wi
 This record documents the displayed behaviour in the Ignition Perspective demonstrator. It does not establish live industrial network monitoring or actual fault detection.
 ## Screenshot Evidence
 
-![Scenario 0 — Normal Operation](Scenario-0-Normal-Operation.png)
+## Screenshot Evidence
+
+![Scenario 0 — Normal Operation](./Scenario-0-Normal-Operation.png)
 
 *The dashboard shows the normal operating state, with displayed devices online and the Substation LAN healthy.*
