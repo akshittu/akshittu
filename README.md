@@ -102,8 +102,8 @@ The demonstrator implements six selectable scenarios identified by numeric value
 
 The OT/SCADA demonstrator was evaluated using six predefined scenarios covering normal operation, substation LAN failure, historian failure, OT firewall failure, enterprise firewall failure, and IED failure.
 
-- [Read the Scenario Test Results (PDF)](Scenario-Test-Results.pdf)
-- [View the Scenario Test Results (Markdown)](Scenario-Test-Results.md)
+- [Read Scenario Test Results (PDF)](Scenario-Test-Results.pdf)
+- [View Scenario Test Results (Markdown)](./Scenario-Test-Results.md)
   
 ### Backend-Driven Visualisation
 
