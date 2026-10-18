@@ -23,3 +23,9 @@ The dashboard reflects the selected Substation LAN Failure scenario by showing t
 This record documents the visible behaviour of the Ignition Perspective demonstrator. It does not establish that an actual network outage occurred or that live network traffic or communication failures were detected.
 
 Attach or link the corresponding Scenario 1 screenshot when it has been uploaded to the repository.
+
+## Screenshot Evidence
+
+![Scenario 1 — Substation LAN Failure](https://github.com/akshittu/akshittu/blob/main/Screenshot/Scenario-tests/Scenario-1-Substation-LAN-Failure.png)
+
+*The dashboard shows the Substation LAN in a FAILED state and the PLC/RTU OFFLINE, with the displayed impact identified as Loss of Operational Communications.*
