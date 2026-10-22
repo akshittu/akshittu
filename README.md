@@ -120,6 +120,103 @@ The Ignition Perspective demonstrator includes six selectable scenarios represen
 
 For the consolidated findings and limitations, see the [Scenario Test Results (PDF)](Scenario-Test-Results.pdf) or [Scenario Test Results (Markdown)](Scenario-Test-Results.md).
 
+## Simulated PLC Integration and Modbus TCP Traffic Analysis
+
+### Overview
+
+The Purdue-based injection substation demonstrator has been extended with a simulated PLC and live process-data integration. A Python-based Modbus TCP server runs on a Parrot Security VM, while Ignition 8.3.9 runs on a Windows Server 2019 VM.
+
+The lab now demonstrates simulated process-data acquisition, breaker-state monitoring, alarm indication, and visibility into Modbus TCP communication using Wireshark.
+
+### Lab Architecture
+
+- **Simulated PLC:** Python-based Modbus TCP server on Parrot Security VM.
+- **SCADA/HMI:** Ignition 8.3.9 with Perspective.
+- **Gateway:** Windows Server 2019 VM.
+- **Protocol:** Modbus TCP.
+- **Network:** VMware host-only network, `192.168.187.0/24`.
+- **Traffic analysis:** Wireshark on a separate Windows VM, with supplementary packet inspection using `tcpdump` on Parrot.
+
+### Implemented Features
+
+#### 1. Live Process-Data Integration
+
+Ignition reads holding register values from the simulated PLC and updates the Tag Browser automatically.
+
+Implemented tags include:
+
+- `PLC_Voltage_Raw`
+- `PLC_Voltage_kV`
+- `PLC_Frequency_Raw`
+- `PLC_Frequency_Hz`
+- `PLC_Breaker_Status`
+- `PLC_Breaker_State`
+- `PLC_Alarm_Status`
+- `PLC_Alarm_State`
+
+The voltage value is scaled into engineering units for display. The Perspective HMI displays the simulated 33 kV supply and breaker state.
+
+#### 2. Two-Source Substation HMI
+
+The Perspective overview represents two incoming 33 kV sources, their respective circuit breakers, the 33 kV busbar, transformers, 11 kV distribution, bus coupler, and loads.
+
+The simulated PLC feedback is associated with the designated 33 kV breaker. Breaker position is displayed separately from supply availability.
+
+#### 3. PLC Alarm Indication
+
+The simulated PLC alarm status is displayed independently from the existing scenario-driven alarm indicators.
+
+- `0` — Normal
+- `1` — Alarm active
+
+A dynamic colour indicator distinguishes normal and active PLC alarm states. The existing scenario-driven central alarm count has been extended to include the PLC alarm contribution.
+
+This PLC alarm is a simulated status bit and is not, by itself, a native Ignition alarm event.
+
+#### 4. Modbus TCP Traffic Analysis
+
+Wireshark captures were obtained on the host-only network between:
+
+- Ignition Gateway: `192.168.187.128`
+- Simulated PLC: `192.168.187.129`
+
+The captured traffic demonstrates Modbus TCP polling and responses. Wireshark decodes Function Code 3 (Read Holding Registers), including register addresses and returned values.
+
+Supplementary `tcpdump` captures on Parrot provide hexadecimal packet data for further protocol inspection.
+
+#### 5. Write-Operation Investigation — In Progress
+
+The Python control script uses a Modbus register-write operation to change the simulated breaker and alarm states. The resulting state changes have been observed in Ignition.
+
+However, a write request has not yet been independently identified and verified in the Wireshark capture. The current captures primarily demonstrate Ignition polling and register responses.
+
+The next stage is to isolate and verify the write request, then implement and test a dedicated SCADA-originated command path from Ignition to the simulated PLC.
+
+### Validation Status
+
+| Test | Status |
+|---|---|
+| Modbus TCP connectivity | Verified |
+| Live register updates in Ignition | Verified |
+| Voltage scaling and HMI display | Verified |
+| Simulated breaker state updates | Verified |
+| PLC alarm activation and clearing | Verified |
+| Dynamic PLC alarm indicator | Verified |
+| Wireshark decoding of Function Code 3 | Verified |
+| Write request independently identified in capture | In progress |
+| Ignition-to-PLC command path | Planned |
+
+### Cybersecurity Relevance
+
+This lab provides hands-on experience with industrial protocol visibility, SCADA integration, process-data monitoring, and the analysis of Modbus TCP communications.
+
+It also establishes a foundation for examining unauthenticated industrial communications, access-control considerations, command visibility, and the distinction between process feedback and control requests.
+
+### Scope and Limitations
+
+This is a simulated laboratory environment. It is not connected to a physical PLC or an operational substation. The current packet captures establish read polling and responses; a verified SCADA-originated write operation and production-grade OT security controls remain future development objectives.
+
+
 ### Backend-Driven Visualisation
 
 The scenario selection changes backend tag values, which are consumed by configured Perspective bindings to update the visual display.
