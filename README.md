@@ -53,7 +53,7 @@ The following screenshots illustrate the current Ignition Perspective implementa
 
 ### 1. Substation Overview Dashboard
 
-![Substation Overview Dashboard](Overview-Dashboard.png)
+![Updated Injection Substation HMI](Screenshot/Modbus-PLC-Overview.png)
 
 The overview presents a simulated injection substation, including electrical measurements, breaker states, transformer information, system status, and selected scenario indicators.
 
@@ -156,6 +156,8 @@ Implemented tags include:
 
 The voltage value is scaled into engineering units for display. The Perspective HMI displays the simulated 33 kV supply and breaker state.
 
+![Simulated PLC Tag Browser](Screenshot/Modbus-PLC-Tags.png)
+
 #### 2. Two-Source Substation HMI
 
 The Perspective overview represents two incoming 33 kV sources, their respective circuit breakers, the 33 kV busbar, transformers, 11 kV distribution, bus coupler, and loads.
@@ -183,6 +185,14 @@ Wireshark captures were obtained on the host-only network between:
 The captured traffic demonstrates Modbus TCP polling and responses. Wireshark decodes Function Code 3 (Read Holding Registers), including register addresses and returned values.
 
 Supplementary `tcpdump` captures on Parrot provide hexadecimal packet data for further protocol inspection.
+
+**Modbus TCP Read Request**
+
+![Modbus TCP Read Request](Screenshot/Modbus-TCP-Read-Capture1.png)
+
+**Modbus TCP Read Response**
+
+![Modbus TCP Read Response](Screenshot/Modbus-TCP-Read-Capture2.png)
 
 #### 5. Write-Operation Investigation — In Progress
 
@@ -215,8 +225,6 @@ It also lays the groundwork for examining unauthenticated industrial communicati
 ### Scope and Limitations
 
 This is a simulated laboratory environment. It is not connected to a physical PLC or an operational substation. The current packet captures establish read polling and responses; a verified SCADA-originated write operation and production-grade OT security controls remain future development objectives.
-
-
 
 ### Backend-Driven Visualisation
 
