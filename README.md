@@ -210,16 +210,17 @@ The next stage is to isolate and verify the write request, then implement and te
 
 This lab provides hands-on experience with industrial protocol visibility, SCADA integration, process-data monitoring, and the analysis of Modbus TCP communications.
 
-It also establishes a foundation for examining unauthenticated industrial communications, access-control considerations, command visibility, and the distinction between process feedback and control requests.
+It also lays the groundwork for examining unauthenticated industrial communications, access-control considerations, command visibility, and the distinction between process feedback and control requests.
 
 ### Scope and Limitations
 
 This is a simulated laboratory environment. It is not connected to a physical PLC or an operational substation. The current packet captures establish read polling and responses; a verified SCADA-originated write operation and production-grade OT security controls remain future development objectives.
 
 
+
 ### Backend-Driven Visualisation
 
-The scenario selection changes backend tag values, which are consumed by configured Perspective bindings to update the visual display.
+Scenario selection changes backend tag values, which configured Perspective bindings consume to update the visual display.
 
 For example, selecting Scenario 1 — Substation LAN Failure displays a red failure indicator for the relevant network element.
 
