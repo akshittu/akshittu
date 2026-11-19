@@ -35,7 +35,21 @@ My professional focus is at the intersection of electrical power systems, indust
 
 A Purdue-based injection substation OT/SCADA cybersecurity demonstrator developed using Inductive Automation Ignition Designer and Perspective.
 
-The project combines industrial and enterprise network architecture with scenario-driven monitoring, simulated PLC integration and industrial protocol traffic analysis.
+<p align="center">
+  <a href="https://github.com/akshittu/OT-SCADA-Cybersecurity-Demonstrator">
+    <img
+      src="https://raw.githubusercontent.com/akshittu/OT-SCADA-Cybersecurity-Demonstrator/main/Overview-Dashboard.png"
+      alt="OT/SCADA Cybersecurity Demonstrator – Substation Overview Dashboard"
+      width="800"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <strong>Ignition Perspective | Purdue Architecture | Simulated PLC | Modbus TCP</strong>
+</p>
+
+The project combines industrial and enterprise network architecture with scenario-driven monitoring, simulated PLC integration, and industrial protocol traffic analysis.
 
 **Key implementations include:**
 - Purdue Model-based injection substation architecture.
