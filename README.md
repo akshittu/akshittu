@@ -30,20 +30,27 @@ My professional focus is at the intersection of electrical power systems, indust
 ### 1. OT/SCADA Cybersecurity Demonstrator
 **Flagship Project**
 
-A Purdue-based injection substation monitoring demonstrator developed using Ignition Designer and Perspective.
+A Purdue-based injection substation OT/SCADA cybersecurity demonstrator developed using Inductive Automation Ignition Designer and Perspective.
 
-The project explores:
-- Industrial and enterprise network architecture.
-- OT asset visibility and infrastructure monitoring.
-- Scenario-driven infrastructure failure simulation.
-- Alarm management and trend visualisation.
-- OT network availability and operational awareness.
+The project combines industrial and enterprise network architecture with scenario-driven monitoring, simulated PLC integration and industrial protocol traffic analysis.
+
+**Key implementations include:**
+- Purdue Model-based injection substation architecture.
+- Ignition Perspective SCADA monitoring interface.
+- Six selectable infrastructure-failure scenarios.
+- Backend tag-driven asset status and alarm visualisation.
+- Alarm and trend monitoring.
+- Python-based simulated PLC integration using Modbus TCP.
+- Live process-data acquisition and breaker-state monitoring.
+- Wireshark analysis of Modbus TCP read requests and responses.
+
+**Technical environment:** Ignition 8.3.9, Python, Modbus TCP, Wireshark, Parrot Security OS, and VMware Workstation Pro.
 
 [View OT/SCADA Cybersecurity Demonstrator](https://github.com/akshittu/OT-SCADA-Cybersecurity-Demonstrator)
 
 ### 2. Eight-VM Cybersecurity Lab — Infrastructure Design and Deployment
 
-Designed, deployed and configured an eight-virtual-machine cybersecurity laboratory using VMware Workstation Pro.
+Designed, deployed, and configured an eight-virtual-machine cybersecurity laboratory using VMware Workstation Pro.
 
 The completed infrastructure provides an integrated environment for:
 - Windows client and server administration.
