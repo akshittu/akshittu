@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="Profile-banner.png" alt="Akeem Shittu – OT/ICS Cybersecurity Professional" width="100%">
+</p>
 
 # Akeem Shittu
 
