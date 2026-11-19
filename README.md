@@ -81,6 +81,18 @@ Protocol implementation and hands-on testing are documented separately from arch
 
 ## Technical Skills and Tools
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Ignition-0077B5?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Modbus_TCP-00A6A6?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nmap-0078D4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white" />
+  <img src="https://img.shields.io/badge/OWASP_ZAP-00549E?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/VMware-607078?style=for-the-badge&logo=vmware&logoColor=white" />
+  <img src="https://img.shields.io/badge/Parrot_OS-00A5A5?style=for-the-badge" />
+</p>
+
 **OT/ICS and SCADA:** Ignition Designer, Purdue Model, SCADA architecture, Modbus TCP and industrial network concepts.
 
 **Network Security and Analysis:** Nmap, Wireshark, network discovery and traffic analysis.
